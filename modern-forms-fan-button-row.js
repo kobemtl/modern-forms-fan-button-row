@@ -1,8 +1,6 @@
-import {
-	LitElement,
-	html,
-	css,
-} from "https://unpkg.com/lit-element@2.0.1/lit-element.js?module";
+var LitElement = LitElement || Object.getPrototypeOf(customElements.get("home-assistant-main"));
+var html = LitElement.prototype.html;
+var css = LitElement.prototype.css;
 
 class ModernFormsFanButtonRow extends LitElement {
 
